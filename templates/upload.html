@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+	<head>
+		<meta charset="UTF-8">
+    <title>Upload</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+      .card{
+        border:1px solid rgba(0, 0, 0, 0.685);
+        margin-right: 0px;
+        
+      }
+      .card:hover{
+        animation: roll 1s;
+        transform: scale(1.2);
+        z-index: 5;
+        background: #010207ee;
+        color: #efefef;
+        transition: 0.7s;
+        
+      }
+      .card img{
+        width: 250px;
+      }
+      nav{
+        background-color: #21c77aa6;
+      }
+      ul li a{
+        color: white !important;
+      }
+      body{
+        color: black;
+        font-family:  sans-serif;
+      }
+
+
+
+#nav-bar ul li a:hover
+{
+  background-color: white;
+	color: #21c77aa6!important;
+}
+
+#disease-details
+{
+	color: #efefef !important;
+	background-image:  linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url(https://user-images.githubusercontent.com/52371968/97005541-3547bb00-155c-11eb-8e08-eab1f57f6a62.jpg);
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+#disease-details h2
+{
+	text-align: center;
+	padding-bottom: 10px;
+	color: #efefef !important;
+}
+#disease-details h2::after
+{
+	content: '';
+	background: #efefef;
+	display: block;
+	margin: 20px auto 5px;
+	height: 3px;
+	width: 130px;
+}
+.disease-details
+{
+	margin-top: 40px;
+}
+
+.disease-details p
+{
+	font-size: 16px;
+	margin-top: 20px;
+	color: #ccc;
+}
+#disease-details .col-md-6:hover
+{
+	cursor:  pointer;
+	background:  #00ff88a6;
+	transition: 0.7s;
+
+}
+
+.btn-default
+{
+  color:#ffffff;
+  border-color:#ffffff;
+}
+
+.btn-default.outline:hover, .btn-default.outline:focus, .btn-default.outline:active, .btn-default.outline.active, .open > .dropdown-toggle.btn-default {
+	color:#00ff88a6;
+	border-color:#ffffff;
+}
+.btn-default.outline:active, .btn-default.outline.active {
+	border-color:#ffffff;
+	color: #00ff88a6
+	box-shadow: none;
+}
+
+input[type="file"] {
+    display: none;
+}
+
+.custom-file-upload {
+
+    display: inline-block;
+    cursor: pointer;
+    color:#008cffd8
+}
+
+
+#data-collection
+{
+	color: #efefef !important;
+	background-image:  linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)),url(https://user-images.githubusercontent.com/52371968/97048101-81642100-1597-11eb-9c3b-226885e3f64c.jpg);
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+
+
+
+#footer .btn-default
+{
+  color:#0e0c0c;
+  border-color:#ffffff;
+}
+
+#footer .btn-default.outline:hover, #footer .btn-default.outline:focus, #footer .btn-default.outline:active, #footer .btn-default.outline.active, #footer .open > #footer .dropdown-toggle.btn-default 
+{
+	color:#2ec27df6;
+	border-color:#ffffff;
+}
+#footer .btn-default.outline:active, #footer .btn-default.outline.active {
+	border-color:#ffffff;
+	color: #2ec27df6;
+	box-shadow: none;
+}
+
+    </style>
+
+
+</head>
+   	<body>
+
+
+
+      <section id="nav-bar">
+        <nav class="navbar navbar-expand-lg navbar-light ">
+   
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <a class="navbar-brand" href="#"><img src="https://user-images.githubusercontent.com/52371968/96976478-885c4680-1539-11eb-9a5e-5e351129b579.png" width="40" height="40"></a>
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item ">
+                <a class="nav-link" href="#">Home </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#website-description">Skin Doctor</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#data-collection">Detection</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#disease-details">List of Diseases</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#skin-care">Skin Care</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#global warming">Global Warming</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+  </section>
+
+
+
+
+<!------------------website description------------------>
+	<section id="website-description">
+		<div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <br><h2>Skin Doctor</h2>
+          <div class="about-content">
+            <p  class="text-justify">
+              Skin Doctor is a Web application that detects and classifies the presence of skin diseases caused due to global warming, provides treatment measures, guides to buy medicines and provides the details of nearby Doctor further treatment.   
+            </p>
+          </div>  
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+<!-----------Data collection---------------->
+	<section id="data-collection">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+      <br><h2>Skin Condition Detection</h2>
+      <p>Fill Details and Upload the Image</p>
+        </div>
+      </div>
+    </div>
+    
+    
+       <div id="new-form" class="col-md-6 offset-md-3 ">
+            <br>
+
+            <form accept-charset="UTF-8" action="{{url_for('upload')}}" method="POST"  enctype="multipart/form-data">
+              <div class="form-group">
+                <input type="text" name="name" class="form-control" id="inputname" placeholder="Enter your Name" required="required">
+              </div>
+              <div class="form-group">
+                <input type="email" name="email" class="form-control" id="inputemail" aria-describedby="emailHelp" placeholder="Enter your Email">
+              </div>
+              <div class="form-group">
+                <input type="text" name="date" class="form-control" id="inputdate" aria-describedby="dateHelp" placeholder="Enter your Date of Birth" onfocus="(this.type='date')" onblur="(this.type='text')">
+              </div>
+              <div class="form-group">
+                <select class="form-control" name="gender" id="inputgender" name="gender" required="required" placeholder="Enter Gender">
+                  <option>Male</option>
+                  <option>Female</option>
+                  <option>Not interested</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <select class="form-control" id="inputbloodgroup" name="bloodgroup" required="required" placeholder="Enter Blood Type">
+                  <option>A+ve</option>
+                  <option>A-ve</option>
+                  <option>B+ve</option>
+                  <option>B-ve</option>
+                  <option>O+ve</option>
+                  <option>O-ve</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <input type="text" name="city" class="form-control" id="inputcity" aria-describedby="cityHelp" placeholder="Enter your City">
+              </div>
+              <div class="form-group">
+                <select class="form-control" id="inputcountry" name="country" required="required" placeholder="Enter Coutnry Name">
+                  <option>Australia</option>
+                  <option>India</option>
+                  <option>USA</option>
+                  <option>Germany</option>
+                  <option>Spain</option>
+                  <option>France</option>
+                  <option>Canada</option>
+                </select>
+              </div>
+
+
+
+              <hr>
+              <div class="col-md-6 offset-md-4 ">
+                <label class="mr-2">To upload the image</label>
+                <label class="custom-file-upload"> click here
+                <input type="file" name="file" accept"image/*" multiple>
+              </label> 
+              </div>
+              <hr>
+              <div class="col-md-12 text-center">
+              <button type="submit" class="btn btn-default btn-lg outline" value="send">Submit</button>
+              </div>
+            </form>
+        </div> 
+        
+  
+    
+
+<!---------here---->
+
+ 
+  </section> 
+
+
+
+<!------------------model description------------------>
+<section id="model-description">
+  <div class="container">
+    <br><h2>Detection Model</h2><br>
+    <div class="row">
+       
+      <div class="col-md-6">
+        <p class="text-justify">
+        The Detection of the type of Skin disease involves a Image Classification done using a Deep Convolutional Neural Network. 
+        When the Image is uploaded for predicton the Model initially filters the Skin region and removes all the noise data.
+        Then the processed Image is provided as an Input to an Deep Convolutional Neural Network where the Image is classified to one among
+        Actinic Keratosis, Bullous Impetigo, Dermatitis, Flea Bites, Lyme Disease, Miliaria, Sunburn, Tinea Pedis.</p>   
+      </div>
+
+      <div class="col-md-6">
+        <img src="https://user-images.githubusercontent.com/52371968/96966102-dc136380-152a-11eb-8c54-ce5b02891e5b.jpg" width="500" , height="300">  
+      </div>
+    </div>
+  </div>
+      <div class="container text-center" >
+        <br>
+        <img src="https://user-images.githubusercontent.com/52371968/96969120-96a56500-152f-11eb-9b73-e3cac1050703.JPG" width=1100 , height="400">  
+      </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <br><p class="text-justify">
+            The Deep Convolutional Neural Network is built using Python Libraries such as Tensorflow, Keras and Numpy.
+            The model has 70.4% of f1 accuracy , macro average precision of 72.6% and weighted average precision of 73.0%.
+            The model was trained on total of 2510 images. 
+            The Dataset for the model was obtained from Google Images 
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!---------disease details------------>
+<section id="disease-details">
+  
+  <div class="container">
+    <h2>Disease Details</h2>
+    <div class="row">
+      
+      <div class="col-md-6 text-center">
+        <br><h5>Lyme Disesase</h5>
+        <p class="text-justify">A tick-borne illness caused by the bacterium Borrelia burgdorferi.
+          Deer ticks can carry the bacteria that cause Lyme disease.
+          Lyme disease causes a rash, often in a bull's-eye pattern, and flu-like symptoms. Joint pain and weakness in the limbs can also occur.
+          Most people with Lyme disease recover completely with appropriate antibiotic treatment. For those who develop syndromes after their infection is treated, pain medication may provide symptomatic relief.</p>
+      </div>
+
+      <div class="col-md-6 text-center">
+        <br><h5>Miliaria</h5>
+        <p class="text-justify">A skin condition caused by blocked sweat ducts and trapped sweat beneath the skin.
+          Heat rash is common during hot, humid weather.
+          The rash may appear as blisters or red lumps. Heat rash may cause itchiness or a prickly feeling.
+          Heat rash usually goes away on its own. Use of fans and lightweight clothing can help.</p>
+      </div>
+
+      <div class="col-md-6 text-center">
+        <br><h5>Sunburn</h5>
+        <p class="text-justify">A type of skin burn resulting from too much exposure to sunlight or sunlamps.
+          Repeated exposure increases the risk of other conditions such as wrinkles, dark spots and skin cancer.
+          Symptoms include red, painful, itchy skin that's hot to the touch. Skin may also blister.
+          Treatment includes pain relievers and creams to relieve itching.</p>
+      </div>
+
+      <div class="col-md-6 text-center">
+        <br><h5>Tinea Pedis</h5>
+        <p class="text-justify">A fungal infection that usually begins between the toes.
+          Athlete's foot commonly occurs in people whose feet have become very sweaty while confined within tight-fitting shoes.
+          Symptoms include a scaly rash that usually causes itching, stinging and burning. People with athlete's foot can have moist, raw skin between their toes.
+          Treatment involves topical anti-fungal medication.</p>
+      </div>
+
+      <div class="col-md-6 text-center">
+        <br><h5>Actinic Keratoses</h5>
+        <p class="text-justify">A rough, scaly patch on the skin caused by years of sun exposure.
+          Actinic keratoses usually affects older adults. Reducing sun exposure can help reduce risk.
+          It is most common on the face, lips, ears, back of hands, forearms, scalp and neck. The rough, scaly skin patch enlarges slowly and usually causes no other signs or symptoms. A lesion may take years to develop.
+          Because it can become cancerous, it's usually removed as a precaution.</p>
+      </div>
+
+      <div class="col-md-6 text-center">
+        <br><h5>Bullous Impetigo</h5>
+        <p class="text-justify">A highly contagious skin infection that causes red sores on the face.
+          Impetigo mainly affects infants and children.
+          The main symptom is red sores that form around the nose and mouth. The sores rupture, ooze for a few days, then form a yellow-brown crust.
+          Antibiotics shorten the infection and can help prevent spread to others.</p>
+      </div>
+
+      <div class="col-md-6 text-center">
+        <br><h5>Dermatitis</h5>
+        <p class="text-justify">An itchy inflammation of the skin.
+          Atopic dermatitis usually develops in early childhood and is more common in people who have a family history of the condition.
+          The main symptom is a rash that typically appears on the arms and behind the knees, but can also appear anywhere.
+          Treatment includes avoiding soap and other irritants. Certain creams or ointments may also provide relief from the itching.</p>
+      </div>
+
+      <div class="col-md-6 text-center">
+        <br><h5>Flea Bites</h5>
+        <p class="text-justify">Appear as red and very itchy bumps, and are normally found in small clusters on your lower legs.
+          They can also appear on your arms if you’ve been petting an animal which has fleas.
+          Flea bites normally clear up on their own, but they can get infected if you scratch at them.
+           This can lead to increased redness, pain and swelling around the bite.</p>
+      </div>
+    
+    </div>
+  </div>
+</section>
+
+
+
+
+<!------------skin-care---------------->
+<section id="skin-care">
+    <div class="container">
+      <h2><br></h2>
+      <br><h2>Skin Care Products</h2>
+      <div class="row">
+       
+        
+        <div class="col-md-3 text-center card">
+          <img src="https://user-images.githubusercontent.com/52371968/96973122-1bdf4880-1535-11eb-9292-c53accdf24b3.jpg"  width="300" height="300">
+          <a href="https://plumgoodness.com/products/green-tea-experience-kit?utm_medium=cpc&utm_source=google&utm_campaign=Google%20Shopping&gclid=EAIaIQobChMIsYfz-qDK7AIVkR0rCh3RkwGuEAQYBCABEgJM_PD_BwE">
+          Green Tea</a>
+          <p class="text-justify">Cleanse: Green tea pore-cleansing face wash
+            Tone: Alcohol-free toner (shrinks pores)
+            Moisturize: Award-winning night gel
+            Bonus: Free drawstring pouch!</p>
+        </div>
+
+        <div class="col-md-3 text-center card">
+          <img src="https://user-images.githubusercontent.com/52371968/96973382-7082c380-1535-11eb-83a4-0704d0b7eb4d.jpg" width="300" height="300">
+          <a href="https://www.reequil.com/products/acne-and-acne-scars-spots-treatment-bundle?variant=33677270286468&currency=INR&utm_medium=product_sync&utm_source=google&utm_content=sag_organic&utm_campaign=sag_organic&utm_source=google&utm_medium=shopping&utm_campaign=smart&gclid=EAIaIQobChMIsYfz-qDK7AIVkR0rCh3RkwGuEAQYAyABEgKzKPD_BwE">
+            Re'equil</a>
+          <p class="text-justify">Treats active acne pimples
+            Repairs old and new acne marks and scars
+            Provides water resistant SPF 50 PA++++ broad spectrum sun protection</p>
+        </div>
+
+        <div class="col-md-3  text-center card">
+          <img src="https://user-images.githubusercontent.com/52371968/97101527-51ff0280-16c4-11eb-89e0-cf62fb51c379.jpeg"  width="300" height="300">
+          <a href="https://www.flipkart.com/parachute-deep-nourish-body-lotion/p/itmevmnczhzjacvn?pid=MSCEUFZNXTGQ7GAJ&lid=LSTMSCEUFZNXTGQ7GAJSFXPC9&marketplace=FLIPKART&fm=gamificationAndPersonalisation%2FrecentlyViewed&iid=GAP_RECENTLY_VIEWED_DESKTOP_HORIZONTAL_a7e27081-c409-4d50-81e6-df967ee00851.MSCEUFZNXTGQ7GAJ&ppt=pp&ppn=pp&ssid=epcyqho63k0000001603611284975&otracker=pp_recently_viewed_Recently%2BViewed_4_36.productCard.RECENTLY_VIEWED_Parachute%2BDeep%2BNourish%2BBody%2BLotion_MSCEUFZNXTGQ7GAJ_gamificationAndPersonalisation%2FrecentlyViewed_3&otracker1=pp_recently_viewed_PINNED_gamificationAndPersonalisation%2FrecentlyViewed_Recently%2BViewed_DESKTOP_HORIZONTAL_productCard_cc_4_NA_view-all&cid=MSCEUFZNXTGQ7GAJ">
+            Parachute Body Lotion</a>
+          <p class="text-justify">Lotion created for extra dry skin, and it contains 100% Natural Moisturisers and Coconut Milk.</p>
+        </div>
+
+        <div class="col-md-3 text-center  card">
+          <img src="https://user-images.githubusercontent.com/52371968/97101194-4cec8400-16c1-11eb-8047-d120d3d8f6aa.jpeg" width="300" height="300">
+          <a href="https://www.flipkart.com/nivea-smooth-milk-body-lotion-400ml-nourishing-120ml/p/itmfcz4yxzgasyvq?pid=MSCFCZ4YZMHYKZYH&lid=LSTMSCFCZ4YZMHYKZYHXZ7AJM&marketplace=FLIPKART&srno=s_1_1&otracker=AS_QueryStore_OrganicAutoSuggest_1_5_na_na_na&otracker1=AS_QueryStore_OrganicAutoSuggest_1_5_na_na_na&fm=SEARCH&iid=2298eaae-730e-44af-a793-947ecdb8a47e.MSCFCZ4YZMHYKZYH.SEARCH&ppt=sp&ppn=sp&ssid=l83xo0thhc0000001603610613319&qH=216578e94666a8c0">
+            NIVEA Smooth Milk Body Lotion</a>
+          <p class="text-justify">
+            The NIVEA Smooth Milk Body Lotion works deep within the skin repairing dryness layer by layer to give you long-lasting softness and protection. Enriched with deep moisturizing ingredients, the body lotion provides long lasting smoothness.          </p>
+        </div>
+
+        <div class="col-md-3 text-center  card">
+          <img src="https://user-images.githubusercontent.com/52371968/97101246-cbe1bc80-16c1-11eb-94b4-74877cd4a61d.jpeg"  width="300" height="300">
+          <a href="https://www.flipkart.com/lakme-absolute-perfect-radiance-skin-brightening-day-creme/p/itm9167b98e87233?pid=MSCFQFYHPYC6GRYW&lid=LSTMSCFQFYHPYC6GRYWUESOMV&marketplace=FLIPKART&spotlightTagId=BestsellerId_g9b%2Fema%2F5la%2F1ke&srno=s_1_2&otracker=AS_QueryStore_OrganicAutoSuggest_1_4_na_na_ps&otracker1=AS_QueryStore_OrganicAutoSuggest_1_4_na_na_ps&fm=SEARCH&iid=e77594ab-2823-45f4-8a05-90df72b966e4.MSCFQFYHPYC6GRYW.SEARCH&ppt=sp&ppn=sp&ssid=ktg96r75w00000001603610758564&qH=acc9cfaf85944a73">
+          Lakme Absolute</a>
+          <p class="text-justify">Skin Brightening Day crme with precious micro-crystals and skin Brightening vitamins</p>
+        </div>
+
+        <div class="col-md-3 text-center  card">
+          <img src="https://user-images.githubusercontent.com/52371968/97101376-e5cfcf00-16c2-11eb-916d-9d5d80b8a086.jpeg" width="300" height="300">
+          <a href="https://www.flipkart.com/himalaya-nourishing-skin-cream/p/itmfdpyzwzag26qp?pid=MSCESEWJKGUKNBWZ&lid=LSTMSCESEWJKGUKNBWZITKMPR&marketplace=FLIPKART&srno=s_1_14&otracker=AS_QueryStore_OrganicAutoSuggest_1_4_na_na_na&otracker1=AS_QueryStore_OrganicAutoSuggest_1_4_na_na_na&fm=SEARCH&iid=c4caf2de-b145-4ce8-b61a-7112b1e4d47f.MSCESEWJKGUKNBWZ.SEARCH&ppt=sp&ppn=sp&ssid=6xf8lu3sts0000001603611257329&qH=acc9cfaf85944a73">
+            Himalaya Skin Nourishing Cream</a>
+          <p class="text-justify"> Himalaya Skin Cream is a blend of organic ingredients like Aloe Vera, Winter Cherry, Indian Kino Tree Extracts and Ashwagandha</p>
+        </div>
+
+        <div class="col-md-3  text-center card">
+          <img src="https://user-images.githubusercontent.com/52371968/97101435-642c7100-16c3-11eb-952d-55c1037f3bc1.jpeg"  width="300" height="300">
+          <a href="https://www.flipkart.com/neutrogena-ultra-sheer-dry-touch-sunblock-30ml-spf-50-pack-2/p/itmfgqgsm4wcaghk?pid=CBKFGQGSFXMDN72Y&lid=LSTCBKFGQGSFXMDN72Y3ULM3G&marketplace=FLIPKART&srno=s_1_14&otracker=search&otracker1=search&fm=SEARCH&iid=f7e104eb-2e6b-4daa-8585-918deecf399c.CBKFGQGSFXMDN72Y.SEARCH&ppt=sp&ppn=sp&ssid=epcyqho63k0000001603611284975&qH=b94ccd6a6bc8e34c">
+            Neutrogena Ultra Sheer</a>
+          <p class="text-justify">Ultra Sheer Dry-Touch Sunblock SPF 50+ is a revolutionary dermatologist-tested formula that contains helioplex technology, the latest breakthrough in UV protection.</p>
+        </div>
+
+        <div class="col-md-3  text-center card">
+          <img src="https://user-images.githubusercontent.com/52371968/97101476-c1282700-16c3-11eb-8e08-f81662a108c7.jpeg" width="300" height="300">
+          <a href="https://www.flipkart.com/wow-skin-science-aloe-vera-hydrating-after-sun-soothing-gel-100-ml-tube/p/itmfhjxe2zbxvrha?pid=FCPFHJPCMEGRAG4C&lid=LSTFCPFHJPCMEGRAG4CBO9BAP&marketplace=FLIPKART&srno=s_1_18&otracker=search&otracker1=search&fm=SEARCH&iid=f7e104eb-2e6b-4daa-8585-918deecf399c.FCPFHJPCMEGRAG4C.SEARCH&ppt=sp&ppn=sp&ssid=epcyqho63k0000001603611284975&qH=b94ccd6a6bc8e34c">
+            Skin Science Aloe Vera</a>
+          <p class="text-justify">Skin Science Aloe Vera Hydrating After Sun Soothing Gel is an antioxidant-rich soothing skin care to manage inflamed, sun-exposed and sun burnt skin.</p>
+        </div>
+
+        
+      </div>
+    </div>
+  </section>
+     
+<!---------------global warming-------------->
+<section id="global warming">
+  <div class="container">
+    <h2><br></h2>
+    <div class="row">
+      
+      <div class="col-md-12">
+        <h2>Global Warming</h2>
+        <p class="text-justify">
+        An increase in global temperatures can cause changes, including sea level rise, and changes in the amount and pattern of precipitation, resulting in floods and drought. Experts have also warned that the melting ice glaciers could release bacteria, fungi and viruses incorporated during the freezing process that have been lying dormant for thousands of years that people thought have been eradicated. Heat could make common viruses develop strains to which people have no resistance and increases in the ranges of disease vectors. Global warming can reportedly influence animal evolution, increased disease prevalence and disease progression and even animal extinctions.
+        </p>
+      </div>
+
+  
+      <div class="col-md-12">
+      <br><a href="https://www.who.int/news-room/fact-sheets/detail/climate-change-and-health"> Click here </a> to know more about Global Warming
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section id="footer">
+  <div class="container text-center">
+    <p></p>
+  </div>  
+</section>
+
+
+<section id="footer">  
+  <hr>
+  <div class="text-center">
+
+  <a href=screenshot >
+    <button type="submit" id="detect-button" class="btn btn-default btn-lg outline">Return to Screenshot</button>
+    <br> <br>
+  <a href=submit >
+    <button type="submit" id="detect-button" class="btn btn-default btn-lg outline">Return Web Skin Doctor</button>
+  
+  </div>
+  <hr>
+
+
+
+
+  </body>
+</html>
+
+

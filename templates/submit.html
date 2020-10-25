@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>    
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+ 
+ 
+video 
+{
+  border: 2px solid rgb(246, 250, 249);
+}
+
+
+
+
+#capture-section
+{
+	color: #e7e2e2 !important;
+	background-image:  linear-gradient(rgba(0, 0, 0, 0.267),rgba(0, 0, 0, 0.267)),url(https://user-images.githubusercontent.com/52371968/97069687-73da8580-15ef-11eb-955e-d33ce952dd8e.jpg);
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	padding-top: 50px;
+	padding-bottom: 50px;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+#capture-section h2
+{
+	text-align: center;
+	color: #f0ecec !important;
+}
+#capture-section h2::after
+{
+	content: '';
+	background: #f7f2f2;
+	display: block;
+	margin: 20px auto 5px;
+	height: 3px;
+	width: 130px;
+}
+.capture-section
+{
+	margin-top: 40px;
+}
+
+.capture-section p
+{
+	font-size: 20px;
+  text-align: center;
+	margin-top: 5px;
+	color: rgb(250, 245, 245);
+}
+
+.btn-default
+{
+  color:#ffffff;
+  border-color:#ffffff;
+}
+
+.btn-default.outline:hover, .btn-default.outline:focus, .btn-default.outline:active, .btn-default.outline.active, .open > .dropdown-toggle.btn-default {
+	color:#00ff88a6;
+	border-color:#ffffff;
+}
+.btn-default.outline:active, .btn-default.outline.active {
+	border-color:#ffffff;
+	color: #00ff88a6
+}
+
+
+</style>
+
+
+
+</head>
+
+<body>
+  <section id="capture-section">
+    <div class="container">
+      <div class="row">
+
+            <div class="col-md-12 ">
+              <br><h2>Skin Doctor</h2><br>
+              <p class="text-center">Capture the Infected Region , It will be saved as file named "screenshot.jpg" in your downloads folder.
+                Click "Detect" if you already have a picture taken . The Skin Detection model works only on White Skin.
+              </p>
+            </div>
+
+        <div class="col-md-12">
+          <p align="center">
+              <video id="vid"></video>
+
+              <br>
+  
+              <button id="capture-button" class="btn btn-default btn-lg outline">Capture</button>
+            
+          <a href=submit >
+            <button type="submit" id="detect-button" class="btn btn-default btn-lg outline">Detect</button>
+          
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+<script>
+
+const vid = document.querySelector('video');
+navigator.mediaDevices.getUserMedia({video: true}) // request cam
+.then(stream => {
+  vid.srcObject = stream; // don't use createObjectURL(MediaStream)
+  return vid.play(); // returns a Promise
+})
+.then(()=>{ // enable the button
+  const btn = document.querySelector('button');
+  btn.disabled = false;
+  btn.onclick = e => {
+    takeASnap()
+    .then(download);
+  };
+})
+.catch(e=>console.log('please use the fiddle instead'));
+
+function takeASnap(){
+  const canvas = document.createElement('canvas'); // create a canvas
+  const ctx = canvas.getContext('2d'); // get its context
+  canvas.width = vid.videoWidth; // set its size to the one of the video
+  canvas.height = vid.videoHeight;
+  ctx.drawImage(vid, 0,0); // the video
+  return new Promise((res, rej)=>{
+    canvas.toBlob(res, 'image/jpeg'); // request a Blob from the canvas
+  });
+}
+function download(blob){
+  // uses the <a download> to download a Blob
+  let a = document.createElement('a'); 
+  a.href = URL.createObjectURL(blob);
+  a.download = 'screenshot.jpg';
+  document.body.appendChild(a);
+  a.click();
+}
+
+
+</script>
+
+
+</body>
+    </html>

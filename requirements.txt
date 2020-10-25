@@ -1,0 +1,7 @@
+numpy==1.17.0
+gunicorn==20.0.4
+Flask==1.1.2
+python_firebase==1.2
+tensorflow==2.0.0
+firebase==3.0.1
+Pillow==8.0.1

@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+	<head>
+		<meta charset="UTF-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+	  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+
+#pharmacy .card
+{
+        border:1px solid rgba(0, 0, 0, 0.685);
+        margin-right: 0px;
+        
+}
+      
+#pharmacy .card:hover
+{
+        animation: roll 1s;
+        transform: scale(1.1);
+        z-index: 3;
+        background: #ffffffee;
+        color: #efefef;
+        transition: 0.7s;
+        
+}
+      
+#pharmacy .card img
+{
+        width: 300px;
+}
+
+#doctor .card
+{
+        border:1px solid rgba(0, 0, 0, 0.685);
+        margin-right: 0px;
+        
+}
+      
+#doctor .card:hover
+{
+        animation: roll 1s;
+        transform: scale(1.1);
+        z-index: 5;
+        background: #21c77aa6;
+        color: #efefef;
+        transition: 0.7s;
+        
+}
+      
+#doctor .card img
+{
+        width: 300px;
+}
+
+#report
+{
+	color: #ffffff !important;
+	background-color: #1eff29ad;
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+
+
+#pharmacy h2
+{
+	text-align: center;
+	padding-bottom: 10px;
+  color:#000000!important;
+
+}
+
+
+#pharmacy h2::after
+{
+	content: '';
+	background: #030202;
+	display: block;
+	margin: 20px auto 5px;
+	height: 3px;
+	width: 130px;
+}
+
+#medicine
+{
+	color: #efefef !important;
+	background-image:  linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(https://user-images.githubusercontent.com/52371968/97098321-a93fab80-16a1-11eb-996d-794eec3b1de2.jpg);
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+#medicine h1
+{
+	text-align: center;
+	padding-bottom: 10px;
+	color: #efefef !important;
+}
+#medicine h1::after
+{
+	content: '';
+	background: #efefef;
+	display: block;
+	margin: 20px auto 5px;
+	height: 3px;
+	width: 130px;
+}
+
+#medicine h3::after
+{
+	content: '';
+	background: #efefef;
+	color:#efefef;
+}
+
+.medicine
+{
+	margin-top: 40px;
+}
+
+.medicine p
+{
+	font-size: 16px;
+	margin-top: 20px;
+	color: #ccc;
+}
+#medicine .col-md-6:hover
+{
+	cursor:  pointer;
+	background:  #ffffffaf;
+	transition: 0.7s;
+  color: #000000ea;
+
+}
+
+#doctor h2
+{
+	text-align: center;
+	padding-bottom: 10px;
+  color:#000000!important;
+
+}
+
+
+#doctor h2::after
+{
+	content: '';
+	background: #030202;
+	display: block;
+	margin: 20px auto 5px;
+	height: 3px;
+	width: 130px;
+}
+
+#footer
+{
+  text-align: center;
+}
+
+.btn-default
+{
+  color:#0c0a0a;
+  border-color:#f3f3f3;
+}
+
+.btn-default.outline:hover, .btn-default.outline:focus, .btn-default.outline:active, .btn-default.outline.active, .open > .dropdown-toggle.btn-default {
+	color:#001affee;
+	border-color:#fdfbfb;
+}
+.btn-default.outline:active, .btn-default.outline.active {
+	border-color:#fdf9f9;
+	color: #001affee;
+}
+
+
+    </style>
+
+
+  </head>
+   	<body>
+
+
+
+<!---------------report-------------->
+  <section id="report">
+    <div class="container">
+      <div class="row">
+        
+        <div class="col-md-12 text-center">
+          <br><hr>
+          <h1>Miliaria</h1>
+              <p>The Skin Detection Model identifies your Skin Condition as Miliaria</p>
+        <hr><br>
+            </div>
+      </div>
+    </div>
+  </section>
+
+<!-----------sympotoms---------------->
+<section id="Symptoms">
+    <div class="container">
+  <div class="row">
+    <div class="col-md-12 text-center">
+      <br><h2>Symptoms</h2><br>
+   
+        <p>Miliaria, also called "sweat rash", is a skin disease marked by small and itchy rashes due to sweat trapped under the skin by clogged sweat gland ducts.</p>
+        <p>Miliaria is a common ailment in hot and humid conditions, such as in the tropics and during the summer season.</p>
+        <p>Adults usually develop heat rash in skin folds and where clothing causes friction.</p>
+        <p>In infants, the rash is mainly found on the neck, shoulders and chest.</p><br>
+      </div>  
+    </div>
+  </div>
+</div>
+</section>
+
+
+<!---------medicine------------>
+<section id="medicine">
+  
+  <div class="container">
+    <br><h1>Suggested Medicines</h1>
+    <div class="row">
+      
+      <div class="col-md-6 text-center">
+        <!-- <br><h3>Tacrolimus</h3> -->
+        
+        <!-- <h4>(Carac, Fluoroplex, Efudex)</h4> -->
+        <p class="text-justify">
+            No compelling reason to treat miliaria crystallina exists because this condition is asymptomatic and self-limited.
+Miliaria rubra can cause great discomfort, and miliaria profunda may lead to heat exhaustion. Treatment of these conditions is warranted
+          </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-------------pharmacy----------->
+<section id="pharmacy">
+  <div class="container">
+    <br><h2>Online Pharmacies</h2>
+    <div class="row">
+     
+      
+      <div class="col-md-6 text-center card">
+        <a href="https://www.apollopharmacy.in/">
+          <img src="https://user-images.githubusercontent.com/52371968/97098519-d1300e80-16a3-11eb-86e1-6d798d613d24.jpg" width="300" height="300">
+        </a>
+      </div>
+
+      <div class="col-md-6 text-center card">
+        <a href="https://www.medlife.com/">
+          <img src="https://user-images.githubusercontent.com/52371968/97098521-d4c39580-16a3-11eb-80e4-824155976f37.jpg" width="300" height="300">
+        </a>
+      </div>
+
+      <div class="col-md-6 text-center card">
+        <a href="https://www.netmeds.com/">
+          <img src="https://user-images.githubusercontent.com/52371968/97098523-d8efb300-16a3-11eb-9981-5fe0296ff2d4.png" width="300" height="300">
+        </a>
+      </div>
+
+      <div class="col-md-6 text-center card">
+        <a href="https://www.medplusmart.com/">
+          <img src="https://user-images.githubusercontent.com/52371968/97098526-dd1bd080-16a3-11eb-92cc-43d803d34821.png" width="300" height="300">
+        </a>
+      </div>
+      
+    </div>
+  </div>
+</section>
+
+
+
+
+<section id="doctor">
+  <div class="container">
+    <br><h2>Doctors</h2>
+      <div class="row">
+      
+      
+        <div class="col-md-4  text-center card">
+          <div style="text-align: center;">
+          <img src="https://user-images.githubusercontent.com/52371968/97099678-9cc34f00-16b1-11eb-99c3-28b024d2c53b.png" width="300" height="350">
+          </div>
+          <a href="#">
+            Dr.Pam Beasly</a>
+          <p class="text-center">Sunshine Care, 8411 1/2 Sunset Boulevard, Hollywood, California, USA</p>
+        </div>    
+        
+        <div class="col-md-4  text-center card">
+          <div style="text-align: center;">
+          <img src="https://user-images.githubusercontent.com/52371968/97099679-a056d600-16b1-11eb-8e3e-b028efb48701.png" width="300" height="350">
+          </div>
+          <a href="#">
+            Dr.Ken Adams</a>
+          <p class="text-center">Luton Town Hospital, 5 Coronation Street, Weatherfield, Greater Manchester, UK</p>
+        </div>
+
+        <div class="col-md-4 text-center card">
+          <div style="text-align: center;">
+          <img src="https://user-images.githubusercontent.com/52371968/97099677-9af98b80-16b1-11eb-9228-6ad8c7eff951.png" width="300" height="350">
+          </div>
+          <a href="#">
+              Dr.Angela Madson</a>
+          <p class="text-center">Green Oaks,5 Morton St. Apt. 14. New York City, New York, USA</p>
+        </div>
+
+    </div>
+  </div>
+</section>
+
+
+<section id="footer">  
+  <hr>
+  <div class="text-center">
+
+  <a href=screenshot >
+    <button type="submit" id="detect-button" class="btn btn-default btn-lg outline">Return to Screenshot</button>
+    <br> <br>
+  <a href=submit >
+    <button type="submit" id="detect-button" class="btn btn-default btn-lg outline">Return Web Skin Doctor</button>
+  
+  </div>
+  <hr>
+</section>
+
+  </body>
+</html>

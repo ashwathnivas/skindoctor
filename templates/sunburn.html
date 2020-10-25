@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+	<head>
+		<meta charset="UTF-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+	  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+
+#pharmacy .card
+{
+        border:1px solid rgba(0, 0, 0, 0.685);
+        margin-right: 0px;
+        
+}
+      
+#pharmacy .card:hover
+{
+        animation: roll 1s;
+        transform: scale(1.1);
+        z-index: 3;
+        background: #ffffffee;
+        color: #efefef;
+        transition: 0.7s;
+        
+}
+      
+#pharmacy .card img
+{
+        width: 300px;
+}
+
+#doctor .card
+{
+        border:1px solid rgba(0, 0, 0, 0.685);
+        margin-right: 0px;
+        
+}
+      
+#doctor .card:hover
+{
+        animation: roll 1s;
+        transform: scale(1.1);
+        z-index: 5;
+        background: #21c77aa6;
+        color: #efefef;
+        transition: 0.7s;
+        
+}
+      
+#doctor .card img
+{
+        width: 300px;
+}
+
+#report
+{
+	color: #ffffff !important;
+	background-color: #1effa1f3;
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+
+
+#pharmacy h2
+{
+	text-align: center;
+	padding-bottom: 10px;
+  color:#000000!important;
+
+}
+
+
+#pharmacy h2::after
+{
+	content: '';
+	background: #030202;
+	display: block;
+	margin: 20px auto 5px;
+	height: 3px;
+	width: 130px;
+}
+
+#medicine
+{
+	color: #efefef !important;
+	background-image:  linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(https://user-images.githubusercontent.com/52371968/97098321-a93fab80-16a1-11eb-996d-794eec3b1de2.jpg);
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+#medicine h1
+{
+	text-align: center;
+	padding-bottom: 10px;
+	color: #efefef !important;
+}
+#medicine h1::after
+{
+	content: '';
+	background: #efefef;
+	display: block;
+	margin: 20px auto 5px;
+	height: 3px;
+	width: 130px;
+}
+
+#medicine h3::after
+{
+	content: '';
+	background: #efefef;
+	color:#efefef;
+}
+
+.medicine
+{
+	margin-top: 40px;
+}
+
+.medicine p
+{
+	font-size: 16px;
+	margin-top: 20px;
+	color: #ccc;
+}
+#medicine .col-md-6:hover
+{
+	cursor:  pointer;
+	background:  #ffffffaf;
+	transition: 0.7s;
+  color: #000000ea;
+
+}
+
+#doctor h2
+{
+	text-align: center;
+	padding-bottom: 10px;
+  color:#000000!important;
+
+}
+
+
+#doctor h2::after
+{
+	content: '';
+	background: #030202;
+	display: block;
+	margin: 20px auto 5px;
+	height: 3px;
+	width: 130px;
+}
+
+#footer
+{
+  text-align: center;
+}
+
+.btn-default
+{
+  color:#0c0a0a;
+  border-color:#f3f3f3;
+}
+
+.btn-default.outline:hover, .btn-default.outline:focus, .btn-default.outline:active, .btn-default.outline.active, .open > .dropdown-toggle.btn-default {
+	color:#001affee;
+	border-color:#fdfbfb;
+}
+.btn-default.outline:active, .btn-default.outline.active {
+	border-color:#fdf9f9;
+	color: #001affee;
+}
+
+
+    </style>
+
+
+  </head>
+   	<body>
+
+
+
+<!---------------report-------------->
+  <section id="report">
+    <div class="container">
+      <div class="row">
+        
+        <div class="col-md-12 text-center">
+          <br><hr>
+          <h1>Sunburn</h1>
+              <p>The Skin Detection Model identifies your Skin Condition as Sunburn</p>
+        <hr><br>
+            </div>
+      </div>
+    </div>
+  </section>
+
+<!-----------sympotoms---------------->
+<section id="Symptoms">
+    <div class="container">
+  <div class="row">
+    <div class="col-md-12 text-center">
+      <br><h2>Symptoms</h2><br>
+   
+        <p>A type of skin burn resulting from too much exposure to sunlight or sunlamps.
+          </p>
+        <p>Repeated exposure increases the risk of other conditions such as wrinkles, dark spots and skin cancer.
+          </p>
+        <p>Symptoms include red, painful, itchy skin that's hot to the touch. Skin may also blister.</p>
+        <p> Treatment includes pain relievers and creams to relieve itching.</p><br>
+      </div>  
+    </div>
+  </div>
+</div>
+</section>
+
+
+<!---------medicine------------>
+<section id="medicine">
+  
+  <div class="container">
+    <br><h1>Suggested Medicines</h1>
+    <div class="row">
+      
+      <div class="col-md-6 text-center">
+        <br><h3>Fluorouracil cream </h3>
+        
+        <h4>(Carac, Fluoroplex, Efudex)</h4>
+        <p class="text-justify">
+          Topical fluorouracil (5-FU) comes as a topical cream, available in 2 strengths. Your healthcare provider will determine which strength is right for your condition and tell you how often to use the cream (typically 1-2 times a day). Most patients will use the cream for 2-12 weeks, depending on the condition being treated and the response to treatment.
+          </p>
+      </div>
+ 
+      <div class="col-md-6 text-center">
+        <br><h3>Imiquimod cream </h3>
+        <h4>(Aldara, Zyclara)</h4>
+          <p class="text-justify">
+          Indicated for topical treatment of clinically typical, nonhyperkeratotic, nonhypertrophic actinic keratoses on the face or scalp in immunocompetent adults
+          </p>
+      </div>
+
+       <div class="col-md-6 text-center">
+        <br><h3>Zyclara 2.5% or 3.75%</h3>
+        <p class="text-justify">
+          Apply qDay to skin of affected area (either entire face or balding scalp) for two 2-week treatment cycles separated by 2-week no-treatment period
+        </p>
+      </div>
+ 
+      <div class="col-md-6 text-center">
+        <br><h3>Aldara 5%</h3>
+        <p class="text-justify">Apply 2 times a week for 16 weeks to one defined treatment area (contiguous area less than 25 cm), examples of dosing schedules include Monday and Thursday or Tuesday and Friday
+          </p>
+      </div>
+      
+      <div class="col-md-6 text-center">
+        <br><h3>Ingenol mebutate gel-Picato</h3>
+        <p class="text-justify">
+          Ingenol mebutate (also called ingenol-3-angelate) is an extract of a common plant, petty spurge or milkweed (Euphorbia peplus). Ingenol mebutate is derived from a cultivar of Euphorbia peplus that is specifically grown in Queensland for this purpose.
+          It is useful in the treatment of actinic keratoses (actinic keratoses), which are rough spots caused by long term sun exposure.
+        </p>
+      </div>
+ 
+      <div class="col-md-6 text-center">
+        <br><h3>Diclofenac gel - Voltaren, Solaraze</h3>
+        <p class="text-justify">
+          Diclofenac topical gel (Solaraze) is used to treat actinic keratosis (flat, scaly growths on the skin caused by too much sun exposure). Diclofenac is in a class of medications called nonsteroidal anti-inflammatory drugs (NSAIDs). The way diclofenac gel works to treat actinic keratosis is not known
+        </p>
+      </div>
+      
+      
+
+    </div>
+  </div>
+</section>
+
+<!-------------pharmacy----------->
+<section id="pharmacy">
+  <div class="container">
+    <br><h2>Online Pharmacies</h2>
+    <div class="row">
+     
+      
+      <div class="col-md-6 text-center card">
+        <a href="https://www.apollopharmacy.in/">
+          <img src="https://user-images.githubusercontent.com/52371968/97098519-d1300e80-16a3-11eb-86e1-6d798d613d24.jpg" width="300" height="300">
+        </a>
+      </div>
+
+      <div class="col-md-6 text-center card">
+        <a href="https://www.medlife.com/">
+          <img src="https://user-images.githubusercontent.com/52371968/97098521-d4c39580-16a3-11eb-80e4-824155976f37.jpg" width="300" height="300">
+        </a>
+      </div>
+
+      <div class="col-md-6 text-center card">
+        <a href="https://www.netmeds.com/">
+          <img src="https://user-images.githubusercontent.com/52371968/97098523-d8efb300-16a3-11eb-9981-5fe0296ff2d4.png" width="300" height="300">
+        </a>
+      </div>
+
+      <div class="col-md-6 text-center card">
+        <a href="https://www.medplusmart.com/">
+          <img src="https://user-images.githubusercontent.com/52371968/97098526-dd1bd080-16a3-11eb-92cc-43d803d34821.png" width="300" height="300">
+        </a>
+      </div>
+      
+    </div>
+  </div>
+</section>
+
+
+
+
+<section id="doctor">
+  <div class="container">
+    <br><h2>Doctors</h2>
+      <div class="row">
+      
+      
+        <div class="col-md-4  text-center card">
+          <div style="text-align: center;">
+          <img src="https://user-images.githubusercontent.com/52371968/97099678-9cc34f00-16b1-11eb-99c3-28b024d2c53b.png" width="300" height="350">
+          </div>
+          <a href="#">
+            Dr.Pam Beasly</a>
+          <p class="text-center">Sunshine Care, 8411 1/2 Sunset Boulevard, Hollywood, California, USA</p>
+        </div>    
+        
+        <div class="col-md-4  text-center card">
+          <div style="text-align: center;">
+          <img src="https://user-images.githubusercontent.com/52371968/97099679-a056d600-16b1-11eb-8e3e-b028efb48701.png" width="300" height="350">
+          </div>
+          <a href="#">
+            Dr.Ken Adams</a>
+          <p class="text-center">Luton Town Hospital, 5 Coronation Street, Weatherfield, Greater Manchester, UK</p>
+        </div>
+
+        <div class="col-md-4 text-center card">
+          <div style="text-align: center;">
+          <img src="https://user-images.githubusercontent.com/52371968/97099677-9af98b80-16b1-11eb-9228-6ad8c7eff951.png" width="300" height="350">
+          </div>
+          <a href="#">
+              Dr.Angela Madson</a>
+          <p class="text-center">Green Oaks,5 Morton St. Apt. 14. New York City, New York, USA</p>
+        </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+<section id="footer">  
+  <hr>
+  <div class="text-center">
+
+  <a href=screenshot >
+    <button type="submit" id="detect-button" class="btn btn-default btn-lg outline">Return to Screenshot</button>
+    <br> <br>
+  <a href=submit >
+    <button type="submit" id="detect-button" class="btn btn-default btn-lg outline">Return Web Skin Doctor</button>
+  
+  </div>
+  <hr>
+</section>
+
+  </body>
+</html>
