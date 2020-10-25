@@ -5,6 +5,7 @@ python_firebase==1.2
 gcloud==0.18.3
 sseclient==0.0.24
 pycryptodome==3.9.0
+requests-toolbelt==0.9.1
 python_jwt==3.2.4
 tensorflow==2.0.0
 firebase==3.0.1
