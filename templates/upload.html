@@ -6,6 +6,16 @@
     <title>WebSkinDoctor-Home</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script>
+
+$('#file-upload').change(function() {
+  var i = $(this).prev('label').clone();
+  var file = $('#file-upload')[0].files[0].name;
+  $(this).prev('label').text(file);
+});
+
+    </script>
+
     <style>
       .card{
         border:1px solid rgba(0, 0, 0, 0.685);
@@ -99,19 +109,28 @@
 }
 .btn-default.outline:active, .btn-default.outline.active {
 	border-color:#ffffff;
-	color: #00ff88a6
+	color: #00ff88a6;
 	box-shadow: none;
 }
 
+
 input[type="file"] {
-    display: none;
+    display: inline-block;
+}
+
+
+.custom-file-upload {
+  border: 1px solid #ccc;
+  display: inline-block;
+  padding: 6px 12px;
+  cursor: pointer;
 }
 
 .custom-file-upload {
 
     display: inline-block;
     cursor: pointer;
-    color:#008cffd8
+    color:#ffffff;
 }
 
 
@@ -224,13 +243,13 @@ input[type="file"] {
                 <input type="text" name="name" class="form-control" id="inputname" placeholder="Enter your Name" required="required">
               </div>
               <div class="form-group">
-                <input type="email" name="email" class="form-control" id="inputemail" aria-describedby="emailHelp" placeholder="Enter your Email">
+                <input type="email" name="email" class="form-control" id="inputemail" aria-describedby="emailHelp" placeholder="Enter your Email" required="required">
               </div>
               <div class="form-group">
-                <input type="text" name="date" class="form-control" id="inputdate" aria-describedby="dateHelp" placeholder="Enter your Date of Birth" onfocus="(this.type='date')" onblur="(this.type='text')">
+                <input type="text" name="date" class="form-control" id="inputdate" aria-describedby="dateHelp" placeholder="Enter your Date of Birth" onfocus="(this.type='date')" onblur="(this.type='text')" required="required"> 
               </div>
               <div class="form-group">
-                <select class="form-control" name="gender" id="inputgender" name="gender" required="required" placeholder="Enter Gender">
+                <select class="form-control" name="gender" id="inputgender" name="gender" placeholder="Enter Gender" required="required">
                   <option>Male</option>
                   <option>Female</option>
                   <option>Not interested</option>
@@ -238,7 +257,7 @@ input[type="file"] {
               </div>
 
               <div class="form-group">
-                <select class="form-control" id="inputbloodgroup" name="bloodgroup" required="required" placeholder="Enter Blood Type">
+                <select class="form-control" id="inputbloodgroup" name="bloodgroup" required="required" placeholder="Enter Blood Type" >
                   <option>A+ve</option>
                   <option>A-ve</option>
                   <option>B+ve</option>
@@ -248,7 +267,7 @@ input[type="file"] {
                 </select>
               </div>
               <div class="form-group">
-                <input type="text" name="city" class="form-control" id="inputcity" aria-describedby="cityHelp" placeholder="Enter your City">
+                <input type="text" name="city" class="form-control" id="inputcity" aria-describedby="cityHelp" placeholder="Enter your City" required="required">
               </div>
               <div class="form-group">
                 <select class="form-control" id="inputcountry" name="country" required="required" placeholder="Enter Coutnry Name">
@@ -265,10 +284,10 @@ input[type="file"] {
 
 
               <hr>
-              <div class="col-md-6 offset-md-4 ">
+              <div class="col-md-6 offset-md-3 text-center ">
                 <label class="mr-2">To upload the image</label>
-                <label class="custom-file-upload"> click here
-                <input type="file" name="file" accept"image/*" multiple>
+                <label for="file-upload" class="custom-file-upload">
+                <input id="file-upload" type="file" name="file" accept"image/*" required="required" >
               </label> 
               </div>
               <hr>
